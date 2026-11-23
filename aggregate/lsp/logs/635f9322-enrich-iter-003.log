@@ -1,0 +1,27 @@
+[2026-11-23T04:49:42Z] === ENRICH ITERATION 3 START | repo=DelSkayn/rquickjs sha=635f9322 ===
+[2026-11-23T04:49:42Z] [iter=3] PHASE START: enrich repo=DelSkayn/rquickjs sha=635f9322 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/635f9322-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/635f9322ccc875e3f9851e7f75ec538cf3274fd5.nq.gz
+[2026-11-23T04:49:46Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-23T04:50:03Z] [iter=3] AST store loaded triples=2617388 load_secs=16 mem_mb=925 MB
+[2026-11-23T04:50:03Z] [iter=3] Step 2: Finding LSP targets mem_mb=925 MB
+[2026-11-23T04:50:05Z] [iter=3] LSP targets found call_sites=11182 imports=184 extends=0 implements=133 secs=2
+[2026-11-23T04:50:07Z] [iter=3] Loaded checkpoint partial graph triples=68757
+[2026-11-23T04:50:07Z] [iter=3] Primed enclosing-def cache from persisted triples entries=827
+[2026-11-23T04:50:09Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=925 MB
+[2026-11-23T04:50:19Z] [iter=3] Position index built positions=169821 nodes_with_types=214002 secs=10 mem_mb=925 MB
+[2026-11-23T04:50:19Z] [iter=3] Step 3: Starting LSP resolution mem_mb=925 MB already_completed_types=[] already_completed_files=83
+[2026-11-23T04:50:19Z] [iter=3] Resolving target type target_type=call_site count=11182
+[2026-11-23T04:50:38Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=0.9 files_done=0 resolved=0 errors=0 current=core/src/loader/bundle.rs
+[2026-11-23T04:51:09Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=2 resolved=89 errors=0 current=core/src/loader/module_loader.rs
+[2026-11-23T04:51:44Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=2.0 files_done=10 resolved=301 errors=0 current=core/src/util.rs
+[2026-11-23T04:52:19Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=26 resolved=485 errors=0 current=sys/src/lib.rs
+[2026-11-23T04:52:53Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=3.2 files_done=38 resolved=612 errors=0 current=core/src/js_lifetime.rs
+[2026-11-23T04:53:28Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=3.8 files_done=51 resolved=702 errors=0 current=scripts/gen-bindings.sh
+[2026-11-23T04:53:39Z] [iter=3] Target type resolved target_type=call_site resolved=720 errors=0 secs=200 mem_mb=925 MB
+[2026-11-23T04:53:39Z] [iter=3] Resolving target type target_type=import_statement count=184
+[2026-11-23T04:53:48Z] [iter=3] Target type resolved target_type=import_statement resolved=60 errors=0 secs=9 mem_mb=925 MB
+[2026-11-23T04:53:48Z] [iter=3] Resolving target type target_type=implements_clause count=133
+[2026-11-23T04:53:51Z] [iter=3] Target type resolved target_type=implements_clause resolved=39 errors=0 secs=3 mem_mb=925 MB
+[2026-11-23T05:11:03Z] [iter=3] Step 5: Writing final enrichment file triples=176461
+[2026-11-23T05:11:04Z] [iter=3] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/635f9322ccc875e3f9851e7f75ec538cf3274fd5.nq.gz size_kb=3922
+[2026-11-23T05:11:04Z] [iter=3] Checkpoint cleared (enrichment complete)
+[2026-11-23T05:11:04Z] [iter=3] PHASE END: enrich elapsed_s=1282 elapsed_min=21.4 total_triples=176461
