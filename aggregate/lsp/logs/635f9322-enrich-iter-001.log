@@ -1,0 +1,30 @@
+[2026-11-23T03:45:51Z] === ENRICH ITERATION 1 START | repo=DelSkayn/rquickjs sha=635f9322 ===
+[2026-11-23T03:45:51Z] [iter=1] PHASE START: enrich repo=DelSkayn/rquickjs sha=635f9322 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/635f9322-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/635f9322ccc875e3f9851e7f75ec538cf3274fd5.nq.gz
+[2026-11-23T03:45:54Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-23T03:46:16Z] [iter=1] AST store loaded triples=2617388 load_secs=22 mem_mb=909 MB
+[2026-11-23T03:46:16Z] [iter=1] Step 2: Finding LSP targets mem_mb=909 MB
+[2026-11-23T03:46:20Z] [iter=1] LSP targets found call_sites=11182 imports=184 extends=0 implements=133 secs=4
+[2026-11-23T03:46:23Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=909 MB
+[2026-11-23T03:46:39Z] [iter=1] Position index built positions=169821 nodes_with_types=214002 secs=16 mem_mb=909 MB
+[2026-11-23T03:46:39Z] [iter=1] Step 3: Starting LSP resolution mem_mb=909 MB already_completed_types=[] already_completed_files=0
+[2026-11-23T03:46:39Z] [iter=1] Resolving target type target_type=call_site count=11182
+[2026-11-23T03:46:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=0 resolved=0 errors=0 current=core/src/value.rs
+[2026-11-23T03:48:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.5 files_done=1 resolved=131 errors=0 current=core/src/class/impl_.rs
+[2026-11-23T03:54:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.4 files_done=7 resolved=808 errors=0 current=core/src/persistent.rs
+[2026-11-23T03:55:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.3 files_done=8 resolved=901 errors=0 current=macro/src/js_lifetime.rs
+[2026-11-23T03:55:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.9 files_done=11 resolved=1094 errors=0 current=macro/src/convert.rs
+[2026-11-23T03:58:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.0 files_done=14 resolved=1562 errors=0 current=core/src/class/cell.rs
+[2026-11-23T03:59:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.7 files_done=15 resolved=1648 errors=0 current=core/src/runtime/opaque.rs
+[2026-11-23T04:00:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.7 files_done=17 resolved=1824 errors=0 current=core/src/runtime/schedular.rs
+[2026-11-23T04:01:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.4 files_done=18 resolved=1923 errors=0 current=macro/src/lib.rs
+[2026-11-23T04:03:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.6 files_done=20 resolved=2217 errors=0 current=sys/src/bindings/aarch64-pc-windows-msvc.rs
+[2026-11-23T04:04:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.2 files_done=22 resolved=2288 errors=0 current=core/src/class/ffi.rs
+[2026-11-23T04:05:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.8 files_done=23 resolved=2476 errors=0 current=tests/macros/pass_trace.rs
+[2026-11-23T04:09:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.9 files_done=25 resolved=2852 errors=0 current=core/src/runtime/async.rs
+[2026-11-23T04:10:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.8 files_done=26 resolved=2951 errors=0 current=core/src/context/ctx.rs
+[2026-11-23T04:13:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.1 files_done=27 resolved=3205 errors=0 current=macro/src/fields.rs
+[2026-11-23T04:15:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.7 files_done=29 resolved=3564 errors=0 current=core/src/value/promise.rs
+[2026-11-23T04:15:56Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=30.1 files_completed=29 new_files_this_iter=29 mem_mb=909 MB
+[2026-11-23T04:15:56Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/635f9322ccc875e3f9851e7f75ec538cf3274fd5.nq.gz triples=33256
+[2026-11-23T04:15:57Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-11-23T04:15:57Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=1805 elapsed_min=30.1 files_completed=29
